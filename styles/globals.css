@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html, body {
+    min-height: 100vh;
+    background-color: black;
+}
+
+@layer base {
+    :root {
+        --gradient-first: #3b82f6;
+        --gradient-second: #db2777;
+        --gradient-third: #9333ea;
+    }
+}

@@ -2,13 +2,14 @@ import React from 'react'
 import Link from 'next/link'
 
 interface HoverLinkProps {
+    route: string
     title: string
     hoverColor: string
 }
 
-const HoverLink = ({ title, hoverColor }: HoverLinkProps) => {
+const HoverLink = ({ route, title, hoverColor }: HoverLinkProps) => {
     return (
-        <Link href="/">
+        <Link href={route}>
             <a className={`text-white font-light hover:text-${hoverColor}-300`}>
                 {title}
             </a>

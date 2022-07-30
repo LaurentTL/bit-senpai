@@ -4,7 +4,7 @@ import logoBitSenpai from '../../public/static/images/logo.svg'
 
 const Logo = () => {
     return (
-        <div className='flex gap-3 justify-between items-center h-100'>
+        <div className='flex gap-3 items-center h-100'>
             <div className='relative h-7 w-7'>
                 <Image
                     src={logoBitSenpai}

@@ -21,7 +21,7 @@ const Menu: FC = () => {
                         <Logo />
                     </div>
                     <div className='hidden lg:flex ml-10'>
-                        <HoverLink route='/' title='Go to Tracker' hoverColor='blue' />
+                        <HoverLink route='/tracker' title='Go to Tracker' hoverColor='blue' />
                     </div>
                     <div className='ml-auto flex items-center h-full gap-6'>
                         <div className='hidden md:block'>
@@ -46,7 +46,7 @@ const Menu: FC = () => {
                         <Login />
                         <SignUp />
                     </div>
-                    <HoverLink route='/' title='Go to Tracker' hoverColor='blue' />
+                    <HoverLink route='/tracker' title='Go to Tracker' hoverColor='blue' />
                 </div>
             </div>
         </nav>

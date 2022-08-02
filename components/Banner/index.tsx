@@ -1,5 +1,5 @@
 import React from 'react'
-import GradientText from '../GradientText/GradientText'
+import GradientText from '../GradientText'
 
 const Banner = () => {
     return (

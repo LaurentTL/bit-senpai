@@ -1,8 +1,8 @@
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 import React, { FC, useEffect, useRef, useState } from 'react'
-import HoverLink from '../HoverLink/HoverLink'
+import HoverLink from '../HoverLink'
 import Login from '../LogIn/Login'
-import Logo from '../Logo/Logo'
+import Logo from '../Logo'
 import SignUp from '../Signup/Signup'
 
 const Menu: FC = () => {

@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server (be sure to use yarn, it's mandatoried):
+First, run the development server (be sure to use yarn, it's mandatory):
 
 ```bash
 yarn dev
@@ -19,15 +19,6 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ## Jira Scrum type project
 
 available on : [LaurentTL BitSenpai Jira dash](https://laurent-treuil.atlassian.net/jira/software/projects/BS/boards/1)
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 

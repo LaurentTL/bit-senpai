@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <div className='max-w-7xl mx-auto min-h-full'>
       <Header />

@@ -18,7 +18,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Jira Scrum type project
 
-available on : [LaurentTL BitSenpai Jira dash](https://laurent-treuil.atlassian.net/jira/software/projects/BS/boards/1)
+available on : [LaurentTL BitSenpai Jira dash](https://laurent-treuil.atlassian.net/jira/software/projects/BS/boards/3)
 
 ## Deploy on Vercel
 

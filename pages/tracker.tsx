@@ -1,20 +1,24 @@
-import { NextPage } from 'next'
+import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next'
 import React, { useEffect } from 'react'
 import CryptoPrice from '../components/CryptoPrice'
 import CryptoSymName from '../components/CryptoSymName'
+import Search from '../components/Search'
 import VolCap from '../components/VolCap'
 
-const tracker: NextPage = ({ coins }: any) => {
+
+const tracker: NextPage = ({ coinsGeko }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+
 
     return (
 
         <div className='px-3 mx-auto text-white w-full flex flex-col gap-2 items-center lg:w-2/3'>
+            <Search />
             {
-                coins.map((coin: any) => {
+                coinsGeko.map((coin: any) => {
                     return (
                         <div key={coin.id} className='w-full flex flex-1 justify-between items-center'>
-                            <CryptoSymName imageUrl={coin.image.small} name={coin.id} sym={coin.symbol.toUpperCase()} />
-                            <CryptoPrice />
+                            <CryptoSymName imageUrl={coin.image.small} name={coin.id} sym={coin.name} />
+                            <CryptoPrice price={coin.market_data.current_price['eur']} change24={coin.market_data} />
                             <VolCap />
                         </div>
                     )
@@ -25,13 +29,18 @@ const tracker: NextPage = ({ coins }: any) => {
     )
 }
 
-export async function getServerSideProps() {
-    const res = await fetch('https://api.coingecko.com/api/v3/coins')
+export const getServerSideProps: GetServerSideProps = async () => {
+
+    const urlGeko = 'https://api.coingecko.com/api/v3/coins'
+
+    const res = await fetch(urlGeko)
     const data = await res.json()
+
+    data?.error ? console.log(data.error) : null
 
     return {
         props: {
-            coins: data
+            coinsGeko: data
         }
     }
 }

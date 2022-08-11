@@ -24,10 +24,10 @@ const Tracker: NextPage = ({ coinsGeko }: InferGetServerSidePropsType<typeof get
                 <input type='text' value={search} onChange={(e) => handleSearch(e.target.value)} className="w-full relative px-7 py-4 bg-black rounded-lg leading-none flex items-center outline-none" placeholder='Search for a coin...' />
             </div>
             <div className='px-6 mb-5 py-3 flex w-full h-14 items-center bg-white bg-opacity-5 rounded-lg'>
-                <p className='w-1/3 text-gray-500 font-light md:w-1/4'>Asset</p>
-                <div className='flex w-2/3 justify-around md:w-3/4'>
+                <p className='w-1/3 text-gray-500 font-light md:w-1/3'>Asset</p>
+                <div className='flex flex-1 justify-around md:w-3/4'>
                     <div className='w-1/2 flex flex-col self-center md:flex-row md:flex-1'>
-                        <p className='w-full text-gray-500 font-light text-center md:text-start md:pl-6'>Price</p>
+                        <p className='w-full text-gray-500 font-light text-center md:text-start'>Price</p>
                         <p className='w-full text-gray-500 font-light text-center'>24h variation</p>
                     </div>
                     <div className='w-1/2 flex flex-col self-center md:flex-row md:flex-1'>

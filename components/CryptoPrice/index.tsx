@@ -22,8 +22,8 @@ const CryptoPrice: FC<CryptoPriceProps> = ({ price, change24 }) => {
             <p className='text-white w-1/2 self-center md:text-start md:self-start'>{ParseFloatToFixedTwo(price)}</p>
             {
                 parseInt(change24, 10) > 0 ?
-                    <p className='text-green-600 w-1/2 self-center md:text-center'>{ParseFloatToFixedTwo(change24)} %</p>
-                    : <p className='text-red-600 w-1/2 self-center md:text-center'>{ParseFloatToFixedTwo(change24)} %</p>
+                    <p className='text-green-600 self-center md:text-center md:w-1/2'>{ParseFloatToFixedTwo(change24)} %</p>
+                    : <p className='text-red-600 self-center md:text-center md:w-1/2'>{ParseFloatToFixedTwo(change24)} %</p>
 
             }
         </div>

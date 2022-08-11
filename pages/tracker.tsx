@@ -17,7 +17,7 @@ const Tracker: NextPage = ({ coinsGeko }: InferGetServerSidePropsType<typeof get
     }
 
     return (
-        <div className='px-6 mx-auto text-white w-full flex flex-col items-center lg:w-2/3'>
+        <div className='px-6 mx-auto text-white w-full flex flex-col justify-start lg:w-2/3'>
 
             <div className="w-full relative my-6 group">
                 <div className="w-full absolute -inset-0.5 from-skin-first via-skin-second to-skin-third bg-gradient-20 rounded-lg blur opacity-75 group-hover:opacity-100"></div>

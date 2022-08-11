@@ -18,10 +18,12 @@ const CryptoSymName = ({ imageUrl, name, sym }: CryptoSymNameProps) => {
                 <Image
                     src={imageUrl}
                     layout='fill'
+                    width={100}
+                    height={100}
                     alt={`${name} logo`}
                 />
             </div>
-            <div className='flex items-center gap-1'>
+            <div className='flex flex-col items-start gap-1 md:flex-row'>
                 <p className='text-white'>{capName}</p>
                 <p className='text-gray-400 text-xs'>{sym}</p>
             </div>

@@ -1,4 +1,3 @@
-import { stubString } from 'cypress/types/lodash'
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 

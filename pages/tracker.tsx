@@ -17,13 +17,13 @@ const Tracker: NextPage = ({ coinsGeko }: InferGetServerSidePropsType<typeof get
     }
 
     return (
-        <div className='px-6 mx-auto text-white w-full flex flex-col justify-start lg:w-2/3'>
+        <div className='px-6 mx-auto mb-8 text-white w-full flex flex-col justify-start lg:w-2/3 md:mb-16'>
 
             <div className="w-full relative my-6 group">
                 <div className="w-full absolute -inset-0.5 from-skin-first via-skin-second to-skin-third bg-gradient-20 rounded-lg blur opacity-75 group-hover:opacity-100"></div>
                 <input type='text' value={search} onChange={(e) => handleSearch(e.target.value)} className="w-full relative px-7 py-4 bg-black rounded-lg leading-none flex items-center outline-none" placeholder='Search for a coin...' />
             </div>
-            <div className='px-6 py-3 flex w-full h-14 items-center bg-white bg-opacity-5 rounded-lg'>
+            <div className='px-6 mb-5 py-3 flex w-full h-14 items-center bg-white bg-opacity-5 rounded-lg'>
                 <p className='w-1/3 text-gray-500 font-light md:w-1/4'>Asset</p>
                 <div className='flex w-2/3 justify-around md:w-3/4'>
                     <div className='w-1/2 flex flex-col self-center md:flex-row md:flex-1'>

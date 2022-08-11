@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC } from 'react'
 import { ParseFloatToFixedTwo } from '../../Utils'
 
 interface CryptoPriceProps {
@@ -6,15 +6,7 @@ interface CryptoPriceProps {
     change24: string
 }
 
-
-
-
 const CryptoPrice: FC<CryptoPriceProps> = ({ price, change24 }) => {
-
-    useEffect(() => {
-
-    })
-
 
     return (
 

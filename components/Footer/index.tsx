@@ -6,8 +6,8 @@ import logoBitSenpai from '../../public/static/images/logo.svg'
 const Footer = () => {
     return (
         <footer className='w-full px-3'>
-            <div className='container grid gap-y-6 lg:gap-y-8'>
-                <div className='grid grid-cols-2 gap-y-4 md:grid-cols-3'>
+            <div className='container w-full grid gap-y-6 lg:gap-y-8'>
+                <div className='grid w-full grid-cols-2 gap-y-4 md:grid-cols-3'>
                     <div className='flex flex-col'>
                         <div className='relative w-10 h-10'>
                             <Link href="/">

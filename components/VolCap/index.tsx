@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const VolCap = () => {
+interface VolCapProps {
+    vol: string,
+    cap: string
+}
+
+const VolCap: FC<VolCapProps> = ({ vol, cap }) => {
     return (
-        <div className='w-1/3 flex items-end flex-col md:flex-row justify-around'>
-            <p className="text-white">Volume</p>
-            <p className="text-white">Capitalisation</p>
+        <div className='text-white w-1/3 flex items-end flex-col md:flex-row'>
+            <p className="text-white md:w-1/2 md:text-end">{vol}</p>
+            <p className="text-white md:w-1/2 md:text-end">{cap}</p>
         </div>
     )
 }

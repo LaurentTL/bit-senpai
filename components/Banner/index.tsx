@@ -3,7 +3,7 @@ import GradientText from '../GradientText'
 
 const Banner = () => {
     return (
-        <div className='w-3/5 h-[500px] m-auto flex flex-col justify-center items-center gap-10 md:w-100'>
+        <div className='px-3 h-[calc(100vh-72px)] mx-auto flex flex-col justify-center items-center gap-10 md:w-3/5 md:h-full'>
             <h1 className='m-w-1/5 text-white text-3xl text-center md:text-5xl'>
                 <GradientText words='BitSenpai' />
                 {' '}is a <br />cryptocurrency tracker.

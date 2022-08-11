@@ -1,9 +1,12 @@
 import React, { FC, useEffect, useState } from 'react'
+import { ParseFloatToFixedTwo } from '../../Utils'
 
 interface CryptoPriceProps {
     price: string
     change24: string
 }
+
+
 
 
 const CryptoPrice: FC<CryptoPriceProps> = ({ price, change24 }) => {
@@ -15,9 +18,14 @@ const CryptoPrice: FC<CryptoPriceProps> = ({ price, change24 }) => {
 
     return (
 
-        <div className='w-1/3 flex flex-col self-center md:flex-row justify-around'>
-            <p className='text-white self-center'>{price}</p>
-            <p className='text-white self-center'>{change24}</p>
+        <div className='w-1/3 flex flex-col self-center md:flex-row'>
+            <p className='text-white w-1/2 self-center md:text-start md:self-start'>{ParseFloatToFixedTwo(price)}</p>
+            {
+                parseInt(change24, 10) > 0 ?
+                    <p className='text-green-600 w-1/2 self-center md:text-center'>{ParseFloatToFixedTwo(change24)} %</p>
+                    : <p className='text-red-600 w-1/2 self-center md:text-center'>{ParseFloatToFixedTwo(change24)} %</p>
+
+            }
         </div>
     )
 }

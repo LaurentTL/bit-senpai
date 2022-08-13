@@ -1114,5 +1114,3 @@ export interface RootObject {
     last_updated: Date;
     localization: Localization;
 }
-
-

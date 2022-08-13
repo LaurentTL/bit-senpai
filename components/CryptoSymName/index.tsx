@@ -1,15 +1,13 @@
-import Image from 'next/image'
-import React, { useEffect } from 'react'
+import Image from 'next/image';
 
 interface CryptoSymNameProps {
-    imageUrl: string,
-    name: string,
-    sym: string
+    imageUrl: string;
+    name: string;
+    sym: string;
 }
 
 const CryptoSymName = ({ imageUrl, name, sym }: CryptoSymNameProps) => {
-
-    const capName = `${name[0].toUpperCase()}${name.slice(1)}`
+    const capName = `${name[0].toUpperCase()}${name.slice(1)}`;
 
     return (
         <div className='w-1/3 flex items-center space-x-3'>
@@ -27,7 +25,7 @@ const CryptoSymName = ({ imageUrl, name, sym }: CryptoSymNameProps) => {
                 <p className='text-gray-400 text-xs'>{sym}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CryptoSymName
+export default CryptoSymName;

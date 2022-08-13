@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import logoBitSenpai from '../../public/static/images/logo.svg'
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import logoBitSenpai from '../../public/static/images/logo.svg';
 
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='grid w-full grid-cols-2 gap-y-4 md:grid-cols-3'>
                     <div className='flex flex-col'>
                         <div className='relative w-10 h-10'>
-                            <Link href="/">
+                            <Link href='/'>
                                 <a>
                                     <Image
                                         src={logoBitSenpai}
@@ -26,39 +26,35 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className='flex flex-col'>
-                        <h2 className='text-gray-400 mb-3'>
-                            BitSenpai
-                        </h2>
-                        <Link href="/">
+                        <h2 className='text-gray-400 mb-3'>BitSenpai</h2>
+                        <Link href='/'>
                             <a className='text-white font-light hover:text-blue-300'>
                                 About
                             </a>
                         </Link>
-                        <Link href="/">
+                        <Link href='/'>
                             <a className='text-white font-light hover:text-blue-300'>
                                 Technologies
                             </a>
                         </Link>
-                        <Link href="/">
+                        <Link href='/'>
                             <a className='text-white font-light hover:text-blue-300'>
                                 GitHub
                             </a>
                         </Link>
                     </div>
                     <div className='flex flex-col'>
-                        <h2 className='text-gray-400 mb-3'>
-                            Get in touch
-                        </h2>
+                        <h2 className='text-gray-400 mb-3'>Get in touch</h2>
                         <p className='text-white font-light'>
                             +33 6 58 03 83 64
                         </p>
 
-                        <Link href="mailto:laurent.treuil@gmail.com">
+                        <Link href='mailto:laurent.treuil@gmail.com'>
                             <a className='text-white font-light hover:text-blue-300'>
                                 Email
                             </a>
                         </Link>
-                        <Link href="/">
+                        <Link href='/'>
                             <a className='text-white font-light hover:text-blue-300'>
                                 LinkedIn
                             </a>
@@ -66,13 +62,13 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-12 mb-4">
+            <div className='mt-12 mb-4'>
                 <p className='text-gray-400 font-light text-xs'>
                     © 2022 BitSenpai | LaurentTL. All rights reserved
                 </p>
             </div>
-        </footer >
-    )
-}
+        </footer>
+    );
+};
 
-export default Footer
+export default Footer;

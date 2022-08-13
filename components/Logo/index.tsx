@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import React from 'react'
-import logoBitSenpai from '../../public/static/images/logo.svg'
+import Image from 'next/image';
+import React from 'react';
+import logoBitSenpai from '../../public/static/images/logo.svg';
 
 const Logo = () => {
     return (
@@ -13,11 +13,9 @@ const Logo = () => {
                     alt='logo bitsenpai'
                 />
             </div>
-            <p className='font-bold text-xl text-white'>
-                BitSenpai
-            </p>
+            <p className='font-bold text-xl text-white'>BitSenpai</p>
         </div>
-    )
-}
+    );
+};
 
-export default Logo
+export default Logo;

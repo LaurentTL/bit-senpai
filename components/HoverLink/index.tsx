@@ -1,11 +1,10 @@
-import React from 'react'
-import Link from 'next/link'
-import { Url } from 'url'
+import React from 'react';
+import Link from 'next/link';
 
 interface HoverLinkProps {
-    route: string
-    title: string
-    hoverColor: string
+    route: string;
+    title: string;
+    hoverColor: string;
 }
 
 const HoverLink = ({ route, title, hoverColor }: HoverLinkProps) => {
@@ -15,7 +14,7 @@ const HoverLink = ({ route, title, hoverColor }: HoverLinkProps) => {
                 {title}
             </a>
         </Link>
-    )
-}
+    );
+};
 
-export default HoverLink
+export default HoverLink;

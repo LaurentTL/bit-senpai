@@ -16,7 +16,8 @@
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
         "cy": "cypress open",
-        "prettier": "prettier --write ."
+        "prettier": "prettier --write .",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@heroicons/react": "^1.0.6",
@@ -48,6 +49,7 @@
         "eslint": "8.20.0",
         "eslint-config-next": "12.2.3",
         "eslint-plugin-storybook": "^0.6.1",
+        "husky": "^8.0.1",
         "jest": "^28.1.3",
         "jest-environment-jsdom": "^28.1.3",
         "postcss": "^8.4.14",

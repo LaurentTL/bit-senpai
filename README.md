@@ -22,6 +22,16 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## commitLint doc for CI
+
+available on : [commitLint doc](https://github.com/conventional-changelog/commitlint/#what-is-commitlint)
+
+Main format for commits
+
+```bash
+type(scope?): subject  #scope is optional; multiple scopes are supported (current delimiter options: "/", "\" and ",")
+```
+
 ## Jira Scrum type project
 
 available on : [LaurentTL BitSenpai Jira dash](https://laurent-treuil.atlassian.net/jira/software/projects/BS/boards/3)

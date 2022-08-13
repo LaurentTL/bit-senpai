@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { ParseFloatToFixedTwo } from '../../Utils';
+import { FC } from 'react';
+import { ParseFloatToFixedTwo } from '../../utils';
 
 interface CryptoPriceProps {
     price: string;

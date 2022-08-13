@@ -3,11 +3,11 @@ import {
     InferGetServerSidePropsType,
     NextPage,
 } from 'next';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CryptoPrice from '../components/CryptoPrice';
 import CryptoSymName from '../components/CryptoSymName';
 import VolCap from '../components/VolCap';
-import { ToMillions } from '../Utils';
+import { ToMillions } from '../utils';
 
 const Tracker: NextPage = ({
     coinsGeko,

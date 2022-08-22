@@ -30,7 +30,7 @@ const CoinPage: NextPage = ({
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const id = context.params?.coinId;
+    const id: any = context.params?.coinId;
     const resCoin = await fetch(SingleCoin(id));
     const dataCoin = await resCoin.json();
 

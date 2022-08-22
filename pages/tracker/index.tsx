@@ -3,11 +3,12 @@ import {
     InferGetServerSidePropsType,
     NextPage,
 } from 'next';
+import Link from 'next/link';
 import { useState } from 'react';
-import CryptoPrice from '../components/CryptoPrice';
-import CryptoSymName from '../components/CryptoSymName';
-import VolCap from '../components/VolCap';
-import { ToMillions } from '../utils';
+import CryptoPrice from '../../components/CryptoPrice';
+import CryptoSymName from '../../components/CryptoSymName';
+import VolCap from '../../components/VolCap';
+import { ToMillions } from '../../utils';
 
 const Tracker: NextPage = ({
     coinsGeko,
@@ -66,26 +67,37 @@ const Tracker: NextPage = ({
                     return (
                         <div
                             key={coin.id}
-                            className='w-full py-3 border-b border-gray-100 border-opacity-25 flex flex-1 justify-between items-center duration-100 hover:scale-105'>
-                            <CryptoSymName
-                                imageUrl={coin.image.small}
-                                name={coin.symbol.toUpperCase()}
-                                sym={coin.name}
-                            />
-                            <CryptoPrice
-                                price={coin.market_data.current_price['eur']}
-                                change24={
-                                    coin.market_data.price_change_percentage_24h
-                                }
-                            />
-                            <VolCap
-                                vol={ToMillions(
-                                    coin.market_data.total_volume['eur']
-                                )}
-                                cap={ToMillions(
-                                    coin.market_data.market_cap['eur']
-                                )}
-                            />
+                            className='w-full py-3 border-b border-gray-100 border-opacity-25  duration-100 hover:scale-105'>
+                            <Link
+                                as={`/coins/${coin.id}`}
+                                href='/[traker]/[coinId]'>
+                                <a className='w-full h-full flex flex-1 justify-between items-center'>
+                                    <CryptoSymName
+                                        imageUrl={coin.image.small}
+                                        name={coin.symbol.toUpperCase()}
+                                        sym={coin.name}
+                                    />
+                                    <CryptoPrice
+                                        price={
+                                            coin.market_data.current_price[
+                                                'eur'
+                                            ]
+                                        }
+                                        change24={
+                                            coin.market_data
+                                                .price_change_percentage_24h
+                                        }
+                                    />
+                                    <VolCap
+                                        vol={ToMillions(
+                                            coin.market_data.total_volume['eur']
+                                        )}
+                                        cap={ToMillions(
+                                            coin.market_data.market_cap['eur']
+                                        )}
+                                    />
+                                </a>
+                            </Link>
                         </div>
                     );
                 })}
